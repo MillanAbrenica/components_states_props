@@ -82,8 +82,6 @@ export function CounterDisplay({
         <CircleButton icon="⚗️" label="MINUS" colors={colors} onPress={onMinus} repeatOnHold />
         <CircleButton icon="🔑" label="RESET" colors={colors} onPress={onReset} />
       </View>
-
-      <Text style={[styles.lessonNote, { color: colors.sub }]}>Parent State → Child Props</Text>
     </View>
   );
 }
@@ -278,11 +276,5 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 1,
     marginTop: 7,
-  },
-  lessonNote: {
-    fontSize: 11,
-    fontWeight: '600',
-    letterSpacing: 0.5,
-    marginTop: 22,
   },
 });
